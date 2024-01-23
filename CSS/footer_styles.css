@@ -6,9 +6,117 @@ footer {
   line-height: 24px;
   width: 100vw;
   max-width: 100%;
+}
+
+.footer-info-container {
   padding: 40px 20px;
 }
 
+.logo-footer{
+  width: 120px;
+  height: 35px;
+  overflow: hidden;
+  text-indent: -10000px;
+  background: url("../assets/redec_logo_negative.svg") no-repeat;
+  background-size: contain;
+  margin-bottom: 40px;
+}
+
+/* SOCIAL CONTAINER */
+
+.social-container{
+  margin-bottom: 70px;
+}
+
+.social-links-footer{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.social-links-footer a[class^="social-link"] {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -100px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.social-links-footer .social-link-facebook {
+  background: url("../assets/icon/facebook_icon_negative.svg");
+}
+
+.social-links-footer .social-link-x {
+  background: url("../assets/icon/x_icon_netative.svg");
+}
+
+.social-links-footer .social-link-insta {
+  background: url("../assets/icon/instagram_icon_negative.svg");
+}
+
+.social-links-footer .social-link-youtube{
+  background: url("../assets/icon/youtube_icon_negative.svg");
+}
+
+
+/* MENU FOOTER */
+
+.menu-footer ul{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 50px;
+}
+
+/* CONTATO FOOTER */
+.contact-footer {
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-footer a[class^="contact-footer"], .contact-footer-address{
+  position: relative;
+}
+
+.contact-footer a[class^="contact-footer"]::before, .contact-footer-address::before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -28px;
+  top: 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-footer-address::before {
+  background: url("../assets/icon/location_icon_negative.svg");
+}
+
+.contact-footer-tel::before {
+  background: url("../assets/icon/telephone_icon_negative.svg");
+}
+
+.contact-footer-mail::before {
+  background: url("../assets/icon/mail_icon_negative.svg");
+}
+
+/* POLKICY RIGHTS CONTAINER */
+
 .policy-rights-container{
   background-color: var(--brand_primary_700);
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 15px;
+}
+.privacy-policy{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
