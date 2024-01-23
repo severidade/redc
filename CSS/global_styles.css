@@ -1,0 +1,27 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--blue: #22505F;
+	--red: #d0103a;
+	--grey: #F8FAFC;
+
+	--brand_primary_600: #1B404C;
+	--brand_primary_700: #143039;
+
+	--font-normal: "GT Walsheim Font", sans-serif;
+	--font-bold: "GT Walsheim Font Bold", sans-serif;
+}
+
+@font-face {
+	font-family: "GT Walsheim Font";
+	src: url('../assets/fonts/GT-Walsheim-Regular-Trial-BF651b7fc71a47d.otf');
+}
+@font-face {
+	font-family: "GT Walsheim Font Bold";
+	src: url('../assets/fonts/GT-Walsheim-Bold-Trial-BF651b7fc737c57.otf');
+}
+
+body {
+	font-family: var(--font-normal);
+  font-weight: 300;
+}
