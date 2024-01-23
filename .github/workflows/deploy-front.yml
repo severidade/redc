@@ -1,0 +1,27 @@
+name: CI -> Deploy to My website
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy-static:
+    runs-on: ubuntu-latest
+    environment:
+      name: redc
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: FTP Deployment
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: .
+          remote-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          exclude: ".git*, .github*"
+
+          # Você pode adicionar mais opções conforme necessário
