@@ -87,11 +87,71 @@ button[id^="lang"] {
   background: url("../assets/icon/menu/irland.svg");
 }
 
+.expertise-container {
+  padding: 20px;
+  position: relative;
+}
 
+.expertise-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 3px;
+  border-bottom: solid 1px var(--color_slate_200);
+}
 
-.expertise-links {
+.menu-container-nav-title, .menu-container-nav-links {
   font-family: var(--font-bold);
   color: var(--brand_primary_500);
   font-size: 16px;
   line-height: 24px;
+}
+
+.menu-container-nav-title {
+  margin-bottom: 40px;
+}
+
+.menu-container-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 40px;
+}
+
+.menu-container-nav-links a[class^="nav-link"] {
+  display: block;
+  position: relative;
+  /* background-color: violet; */
+}
+
+.menu-container-nav-links a[class^="nav-link"]::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link-understanding::before {
+  background-image: url("../assets/icon/menu/understanding_behaviour.svg");
+}
+
+.nav-link-buildng::before {
+  background: url("../assets/icon/menu/building_brands.svg");
+}
+
+.nav-link-improving::before {
+  background: url("../assets/icon/menu/improving_experiences.svg");
+}
+.nav-link-team::before {
+  background: url("../assets/icon/menu/our_team.svg")
+}
+
+.nav-link-associations::before {
+  background: url("../assets/icon/menu/our_associations.svg")
 }
