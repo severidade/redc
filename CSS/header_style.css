@@ -40,7 +40,8 @@ header {
   overflow-y: scroll;
   z-index: 3;
   top: 0;
-  left: 100%;
+  left: -100%;
+  transition: 0.7s ease-in-out;
 }
 
 .menu-container.mobile.active {
