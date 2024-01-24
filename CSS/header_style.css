@@ -1,0 +1,97 @@
+header {
+  --mobile-menu-height: 120px;
+}
+
+.heder-container {
+  height: var(--mobile-menu-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px 20px 20px;
+  width: 100vw;
+  max-width: 100%;
+}
+
+
+.heder-container .logo {
+  display: block;
+  width: 80px;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -1000px;
+  background: url(../assets/redc_logo_color.svg) no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.heder-container .hamburger {
+  height: 24px;
+  width: 24px;
+  background: url(../assets/icon/menu/hamburger.svg) no-repeat center;
+  background-size: contain;
+}
+
+/* OCULTA E EXIBE MENU CELULAR */
+.menu-container.mobile {
+  height: 100vh;
+  background-color: white;
+  width: 70vw;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 3;
+  top: 0;
+  left: 100%;
+}
+
+.menu-container.mobile.active {
+  left: 0;
+}
+
+.switcher-container {
+  height: var(--mobile-menu-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px var(--color_slate_200);
+  padding: 60px 20px 20px 20px;
+}
+
+.lang-container {
+  display: flex;
+  gap: 20px;
+}
+
+#menu-control-close, button[id^="lang"] {
+  overflow: hidden;
+  text-indent: -1000px;
+  background-size: contain;
+  background-position: center;
+}
+
+#menu-control-close {
+  width: 24px;
+  height: 24px;
+  background: url("../assets/icon/menu/close_menu.svg");
+}
+
+button[id^="lang"] {
+  width: 20px;
+  height: 20px;
+}
+
+#lang-uk {
+  background: url("../assets/icon/menu/uk.svg");
+}
+
+#lang-irland {
+  background: url("../assets/icon/menu/irland.svg");
+}
+
+
+
+.expertise-links {
+  font-family: var(--font-bold);
+  color: var(--brand_primary_500);
+  font-size: 16px;
+  line-height: 24px;
+}
