@@ -7,11 +7,37 @@
   <title>Document</title>
   <link rel="stylesheet" href="./CSS/reset.CSS">
   <link rel="stylesheet" href="./CSS/global_styles.css">
+  <link rel="stylesheet" href="./CSS/header_style.css">
   <link rel="stylesheet" href="./CSS/footer_styles.css">
 </head>
 
 <body>
-  <h1></h1>
+  <header>
+    <div class="heder-container">
+      <a href="#" class="logo">REDC</a>
+      <button id="menu-control-open" class="hamburger"></button>
+    </div>
+    <nav id="menu-container" class="menu-container mobile">
+      <div class="switcher-container">
+        <button id="menu-control-close">Close Menu</button>
+        <div class="lang-container">
+          <button id="lang-uk">UK</button>
+          <button id="lang-irland">Ireland</button>
+        </div>
+      </div>
+      <div class="expertise-container">
+        <h2 class="expertise-nav-title">Our Expertise</h2>
+        <ul class="expertise-links">
+          <li><a href="#">Understanding Behaviour</a></li>
+          <li><a href="#">Building Brands</a></li>
+          <li><a href="#">Improving Experiences</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Our Associations</a></li>
+        </ul>
+      </div>
+      <button id="close_menu" class="close_menu">Close Menu</button>
+    </nav>
+  </header>
   <footer>
     <div class="footer-info-container">
       <div class="logo-footer">REDC</div>
@@ -52,6 +78,7 @@
       </ul>
     </div>
   </footer>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
