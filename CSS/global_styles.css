@@ -9,10 +9,16 @@
 	--brand_primary_600: #1B404C;
 	--brand_primary_700: #143039;
 
+	--brand_secondary_500: #D0103A;
+
 	--color_slate_200: #E2E8F0;
 
 	--font-normal: "GT Walsheim Font", sans-serif;
 	--font-bold: "GT Walsheim Font Bold", sans-serif;
+}
+
+header {
+  --mobile-menu-height: 120px;
 }
 
 @font-face {

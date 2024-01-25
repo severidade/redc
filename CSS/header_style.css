@@ -1,7 +1,3 @@
-header {
-  --mobile-menu-height: 120px;
-}
-
 .heder-container {
   height: var(--mobile-menu-height);
   display: flex;
@@ -10,6 +6,7 @@ header {
   padding: 60px 20px 20px 20px;
   width: 100vw;
   max-width: 100%;
+  border-bottom: solid 1px var(--color_slate_200);
 }
 
 
@@ -88,7 +85,37 @@ button[id^="lang"] {
   background: url("../assets/icon/menu/irland.svg");
 }
 
-.expertise-container {
+/* CTA CONTAINER */
+
+.cta-container {
+  width: 100%;
+  padding: 20px 20px 5px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+a[class^="cta-link"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  color: var(--white);
+  font-weight: 900;
+  border-radius: 40px;
+}
+
+.cta-link-join {
+  background-color: var(--brand_secondary_500);
+}
+
+.cta-link-test {
+  background-color: var(--brand_primary_500);
+}
+
+/* EXPERTISE CONTAINER */
+.expertise-container, .we-do-container {
   padding: 20px;
   position: relative;
 }
@@ -111,13 +138,13 @@ button[id^="lang"] {
 }
 
 .menu-container-nav-title {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .menu-container-nav-links {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 35px;
   padding-left: 40px;
 }
 
@@ -150,9 +177,33 @@ button[id^="lang"] {
   background: url("../assets/icon/menu/improving_experiences.svg");
 }
 .nav-link-team::before {
-  background: url("../assets/icon/menu/our_team.svg")
+  background: url("../assets/icon/menu/our_team.svg");
 }
 
 .nav-link-associations::before {
-  background: url("../assets/icon/menu/our_associations.svg")
+  background: url("../assets/icon/menu/our_associations.svg");
+}
+
+.nav-link-work::before {
+  background: url("../assets/icon/menu/work.svg");
+}
+
+.nav-link-clients::before {
+  background: url("../assets/icon/menu/clients.svg");
+}
+
+.nav-link-we-do-it::before {
+  background: url("../assets/icon/menu/we-do-it.svg");
+}
+
+.nav-link-products::before {
+  background: url("../assets/icon/menu/products.svg");
+}
+
+.nav-link-omnibus::before {
+  background: url("../assets/icon/menu/omnibus.svg");
+}
+
+.nav-link-where-do-it::before {
+  background: url("../assets/icon/menu/where-do-it.svg");
 }
