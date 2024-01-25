@@ -38,7 +38,7 @@
   z-index: 3;
   top: 0;
   left: -100%;
-  transition: 0.7s ease-in-out;
+  transition: left 0.7s ease-in-out;
 }
 
 .menu-container.mobile.active {
