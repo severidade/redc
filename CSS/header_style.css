@@ -115,12 +115,19 @@ a[class^="cta-link"] {
 }
 
 /* EXPERTISE CONTAINER */
-.expertise-container, .we-do-container {
+.expertise-container,
+.we-do-container,
+.who-we-are-container,
+.news-container,
+.contact-container {
   padding: 20px;
   position: relative;
 }
 
-.expertise-container::after {
+.expertise-container::after,
+.we-do-container::after,
+.who-we-are-container::after,
+.news-container::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -206,4 +213,37 @@ a[class^="cta-link"] {
 
 .nav-link-where-do-it::before {
   background: url("../assets/icon/menu/where-do-it.svg");
+}
+
+.nav-link-network::before {
+  background: url("../assets/icon/menu/network.svg");
+}
+
+.nav-link-all-news::before {
+  background: url("../assets/icon/menu/all-news.svg");
+}
+
+.nav-link-political-polls::before {
+  background: url("../assets/icon/menu/political-polls.svg");
+}
+
+.nav-link-thinking::before {
+  background: url("../assets/icon/menu/thinking.svg");
+}
+
+.nav-link-consumer-tracking::before {
+  background: url("../assets/icon/menu/consumer-tracking.svg");
+}
+
+
+.nav-link-get-in-touch::before {
+  background: url("../assets/icon/menu/get-in-touch.svg");
+}
+
+.nav-link-join-redc::before {
+  background: url("../assets/icon/menu/join-redc.svg");
+}
+
+.nav-link-join-panel::before {
+  background: url("../assets/icon/menu/join-panel.svg");
 }
