@@ -105,7 +105,6 @@ button[id^="lang"] {
   font-family: var(--font-normal);
   font-weight: 300;
   color: var(--brand_primary_700);
-  z-index: 2;
   position: relative;
   display: block;
 }
