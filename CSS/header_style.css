@@ -108,7 +108,8 @@ button[id^="lang"] {
 }
 
 .search:hover {
-  border: 1px solid var(--brand_primary_700);
+  border: 1px solid var(--brand_primary_7
+  00);
 }
 
 .submit-search{
