@@ -32,7 +32,7 @@
 .menu-container.mobile {
   height: 100vh;
   background-color: white;
-  width: 70vw;
+  width: clamp(300px, 70vw, 100%);
   position: fixed;
   overflow-y: scroll;
   z-index: 3;
@@ -85,8 +85,48 @@ button[id^="lang"] {
   background: url("../assets/icon/menu/irland.svg");
 }
 
-/* CTA CONTAINER */
 
+.search-container {
+  height: 84px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  border-bottom: solid 1px var(--color_slate_200);
+}
+
+.search {
+  width: 100%;
+  height: 44px;
+  border-radius: 40px;
+  padding: 10px 50px 10px 10px;
+  font-family: var(--font-normal);
+  font-weight: 300;
+  color: var(--brand_primary_700);
+}
+
+.search:hover {
+  border: 1px solid var(--brand_primary_700);
+}
+
+.submit-search{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../assets/icon/menu/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100%;
+  overflow: hidden;
+  text-indent: -1000px;
+}
+
+/* CTA CONTAINER */
 .cta-container {
   width: 100%;
   padding: 20px 20px 5px 20px;
