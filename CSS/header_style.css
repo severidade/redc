@@ -9,7 +9,6 @@
   border-bottom: solid 1px var(--color_slate_200);
 }
 
-
 .heder-container .logo {
   display: block;
   width: 80px;
@@ -32,6 +31,13 @@
 .heder-container .hamburger{
   display: none;
 }
+
+
+/* SOCIAL CONTAINER HEDER*/
+.social-container-heder{
+  display: none;
+}
+
 
 /* OCULTA E EXIBE MENU CELULAR */
 .menu-container.mobile {
@@ -335,14 +341,67 @@ a[class^="cta-link"] {
     height: 146px;
   }
 
+  .heder-container::before {
+    content: "";
+    width: calc(100vw - 30vw);
+    height: 2px;
+    border-bottom: solid 1px var(--color_slate_200);
+    left: 15vw;
+    top: 60px;
+    position: absolute;
+  }
+
   .heder-container .logo {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     z-index: 3;
-    /* border: solid 1px black; */
     width: 100%;
     height: 35px;
   }
+
+  /* SOCIAL CONTAINER */
+
+  .social-container-heder{
+    display: initial;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    z-index: 3;
+  }
+
+  .social-links-heder{
+    display: flex;
+    gap: 20px;
+  }
+
+  .social-links-heder a[class^="social-link"] {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    text-indent: -100px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-color: tomato; */
+  }
+
+  .social-links-heder .social-link-facebook {
+    background: url("../assets/icon/facebook_icon.svg");
+  }
+
+  .social-links-heder .social-link-x {
+    background: url("../assets/icon/X_icon.svg");
+  }
+
+  .social-links-heder .social-link-insta {
+    background: url("../assets/icon/instagram_icon.svg");
+  }
+
+  .social-links-heder .social-link-youtube{
+    background: url("../assets/icon/youtube_icon.svg");
+  }
+
+  /* FIM DO MENU SOCIAL */
 
   .switcher-container {
     display: none;
