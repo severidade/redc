@@ -155,14 +155,23 @@ a[class^="cta-link"] {
   color: var(--white);
   font-weight: 900;
   border-radius: 40px;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .cta-link-join {
   background-color: var(--brand_secondary_500);
 }
 
+.cta-link-join:hover {
+  background-color: var(--brand_secondary_600);
+}
+
 .cta-link-test {
   background-color: var(--brand_primary_500);
+}
+
+.cta-link-test:hover {
+  background-color: var(--brand_primary_600);
 }
 
 /* EXPERTISE CONTAINER */
@@ -330,8 +339,9 @@ a[class^="cta-link"] {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     z-index: 3;
-    border: solid 1px black;
+    /* border: solid 1px black; */
     width: 100%;
+    height: 35px;
   }
 
   .switcher-container {
@@ -345,7 +355,7 @@ a[class^="cta-link"] {
   }
 
   .menu-container-nav-title {
-    background-color: violet;
+    /* background-color: violet; */
     height: 86px;
     margin-bottom: 0;
     display: flex;
@@ -362,6 +372,7 @@ a[class^="cta-link"] {
     padding: 0;
   }
 
+  /* POSICIONANDO ITENS NO GRID */
   .expertise-container {
     grid-column: 3 / 5;
     grid-row: 2 / 3;
@@ -391,14 +402,60 @@ a[class^="cta-link"] {
     align-items: center;
   }
 
+  /* INTERATIVIDADE MENU  */
+
   .expertise-container ul,
   .we-do-container ul,
   .who-we-are-container ul,
   .news-container ul,
   .contact-container ul {
     position: absolute;
+    top: 86px ;
+    left: 50%;
+    width: 348px;
+    padding: 40px 60px 40px 80px;
+    background-color: var(--white);
+    transform: translateX(-50%);
+    display: none;
+    z-index: 1;
   }
 
+  .expertise-container:hover > ul,
+  .we-do-container:hover > ul,
+  .news-container:hover > ul,
+  .contact-container:hover > ul {
+    display: flex;
+    z-index: 3;
+    background-color: var(--white);
+  }
+
+  .expertise-container:hover > ul::before,
+  .we-do-container:hover > ul::before,
+  .news-container:hover > ul::before,
+  .contact-container:hover > ul::before {
+    content: "";
+    width: 80px;
+    height: 20px;
+    background-color: var(--white);
+    top: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -10px);
+    /* background-color: var(--white); */
+  }
+
+  .expertise-container::after,
+  .we-do-container::after,
+  .who-we-are-container::after,
+  .news-container::after {
+    border-bottom: none;
+  }
+
+  .menu-container-nav-links {
+    position: relative;
+  }
+
+  /* BOTÕES CALL TO ACTION */
   a[class^="cta-link"] {
     width: 200px;
   }
