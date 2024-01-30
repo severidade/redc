@@ -4,6 +4,9 @@
   background: var(--brand_secondary_500);
   height: calc(100vh - 120px);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero:after {
@@ -16,6 +19,12 @@
   background: url("../assets/grafismos/arch_hero.svg") no-repeat;
   background-position: left;
   background-size: cover;
+}
+
+.hero div {
+  font-size: 80px;
+  color: white;
+  font-family: var(--font-bold);
 }
 
 @media screen and (min-width: 1000px) {

@@ -9,7 +9,6 @@
   border-bottom: solid 1px var(--color_slate_200);
 }
 
-
 .heder-container .logo {
   display: block;
   width: 80px;
@@ -32,6 +31,13 @@
 .heder-container .hamburger{
   display: none;
 }
+
+
+/* SOCIAL CONTAINER HEDER*/
+.social-container-heder{
+  display: none;
+}
+
 
 /* OCULTA E EXIBE MENU CELULAR */
 .menu-container.mobile {
@@ -335,14 +341,68 @@ a[class^="cta-link"] {
     height: 146px;
   }
 
+  .heder-container::before {
+    content: "";
+    width: calc(100vw - 30vw);
+    height: 2px;
+    border-bottom: solid 1px var(--color_slate_200);
+    left: 50%;
+    top: 60px;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
   .heder-container .logo {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     z-index: 3;
-    /* border: solid 1px black; */
     width: 100%;
     height: 35px;
   }
+
+  /* SOCIAL CONTAINER */
+
+  .social-container-heder{
+    display: initial;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    z-index: 3;
+  }
+
+  .social-links-heder{
+    display: flex;
+    gap: 20px;
+  }
+
+  .social-links-heder a[class^="social-link"] {
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    text-indent: -100px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-color: tomato; */
+  }
+
+  .social-links-heder .social-link-facebook {
+    background: url("../assets/icon/facebook_icon.svg");
+  }
+
+  .social-links-heder .social-link-x {
+    background: url("../assets/icon/X_icon.svg");
+  }
+
+  .social-links-heder .social-link-insta {
+    background: url("../assets/icon/instagram_icon.svg");
+  }
+
+  .social-links-heder .social-link-youtube{
+    background: url("../assets/icon/youtube_icon.svg");
+  }
+
+  /* FIM DO MENU SOCIAL */
 
   .switcher-container {
     display: none;
@@ -398,8 +458,98 @@ a[class^="cta-link"] {
     grid-row: 2 / 3;
     padding: 0;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  /* BUSCA  */
+  .search-container {
+    grid-column: 3 /17;
+    grid-row: 1 / 3;
+    border-bottom: none;
+    padding: 0;
+    height: 60px;
+  }
+
+  .submit-search {
+    border-radius: 0;
+    right: 0;
+    height: 20px;
+    width: 60px;
+    border-left: 1px solid var(--color_slate_200);
+  }
+
+  .search {
+    width: calc(100% - 220px);
+    height: 44px;
+    border-radius: 40px;
+    padding: 10px 50px 10px 60px;
+    font-family: var(--font-normal);
+    font-weight: 300;
+    color: var(--brand_primary_700);
+    /* position: relative; */
+    position: absolute;
+    top: 60px;
+    background-repeat: no-repeat;
+    left: 0;
+    display: block;
+    z-index: 4;
+    transform: translateY(50%);
+    display: none;
+  }
+
+  .search-container.active_search_desktop > .search {
+    display: flex;
+  }
+
+  .search-container.active_search_desktop > .submit-search {
+    background: url("../assets/icon/menu/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+  }
+
+  .search-container.active_search_desktop::before {
+    content: "";
+    width: 44px;
+    height: 44px;
+    background: url("../assets/icon/menu/search.svg") no-repeat;
+    background-size: 35%;
+    background-position: center;
+    left: 1px;
+    position: absolute;
+    top: 82px;
+  }
+
+  .display.hide {
+    display: none;
+  }
+
+  .submit-search-desktop {
+    display: none;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 44px;
+    color: var(--white);
+    font-weight: 900;
+    border-radius: 40px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: var(--brand_primary_500);
+    position: absolute;
+    right: 0;
+    top: 81px;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .search-container.active_search_desktop > .submit-search-desktop {
+    display: flex;
+  }
+
+  .search-container.active_search_desktop > .submit-search-desktop:hover {
+    display: flex;
+    background-color: var(--brand_primary_600);
   }
 
   /* INTERATIVIDADE MENU  */
@@ -460,9 +610,6 @@ a[class^="cta-link"] {
     width: 200px;
   }
 
-  .search-container {
-   display: none;
-  }
 
   .who-we-are-container {
     display: none;
