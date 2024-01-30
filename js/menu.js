@@ -25,7 +25,9 @@ function toggleMenu(event) {
   // document.getElementsByTagName("body")[0].classList.toggle("boqueiaScroll");
 }
 
-function toggleSearch() {
+function toggleSearch(event) {
+  event.preventDefault(); 
+
   if (window.innerWidth > 1000) {
     searchDesktop.classList.toggle("active_search_desktop");
 
@@ -43,7 +45,9 @@ function toggleSearch() {
   }
 }
 
-function removeMobileClass() {
+function removeMobileClass(event) {
+  event.preventDefault(); 
+
   if (window.innerWidth > 1000) {
     toggleDivice.classList.remove("mobile");
     menuControlOpen.classList.remove("active");
