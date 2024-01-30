@@ -141,6 +141,11 @@ button[id^="lang"] {
   border-radius: 100%;
   overflow: hidden;
   text-indent: -1000px;
+  cursor: pointer;
+}
+
+.submit-search-desktop {
+  display: none;
 }
 
 /* CTA CONTAINER */
