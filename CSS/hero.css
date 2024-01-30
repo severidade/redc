@@ -36,7 +36,8 @@
 .hero-text-container {
   z-index: 1;
   padding: 0 20px;
-  animation: slideInRight 2s ease;
+  opacity: 0;
+  animation: slideInRight 1.7s ease 0.3s forwards; 
 }
 
 .hero-text-container > .title {
