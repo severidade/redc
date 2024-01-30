@@ -1,3 +1,14 @@
+@keyframes slideInRight {
+  from {
+    transform: translateX(5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .hero {
   width: 100vw;
   max-width: 100%;
@@ -7,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero::before {
@@ -24,6 +36,7 @@
 .hero-text-container {
   z-index: 1;
   padding: 0 20px;
+  animation: slideInRight 2s ease;
 }
 
 .hero-text-container > .title {
