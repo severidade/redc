@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.hero:after {
+.hero::before {
   content: "";
   position: absolute;
   left: 0;
@@ -28,7 +28,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .hero:after {
+  .hero::before {
     content: "";
     position: absolute;
     left: 0;
