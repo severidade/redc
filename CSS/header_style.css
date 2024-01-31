@@ -209,9 +209,9 @@ a[class^="cta-link"] {
   border-bottom: solid 1px var(--color_slate_200);
 }
 
-.menu-container-nav-title, .menu-container-nav-links {
-  font-family: var(--font-bold);
-  color: var(--brand_primary_500);
+.menu-container-nav-title, .menu-container-nav-links a {
+  font-family: var(--font-bold) !important;
+  color: var(--brand_primary_500) !important;
   font-size: 16px;
   line-height: 24px;
 }
@@ -378,6 +378,8 @@ a[class^="cta-link"] {
   .social-links-heder{
     display: flex;
     gap: 20px;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
   }
 
   .social-links-heder a[class^="social-link"] {
