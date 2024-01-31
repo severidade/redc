@@ -1,0 +1,36 @@
+a[class^="cta-link"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    height: 44px;
+    color: var(--white);
+    font-weight: 900;
+    border-radius: 40px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+a[class^="cta-link"].arrow::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../../assets/button/arrow.svg") no-repeat center;
+  margin-left: 10px;
+}
+
+a[class^="cta-link"].red {
+  background-color: var(--brand_secondary_500);
+}
+
+a[class^="cta-link"].red:hover {
+  background-color: var(--brand_secondary_600);
+}
+
+a[class^="cta-link"].blue {
+  background-color: var(--brand_primary_500);
+}
+
+a[class^="cta-link"].blue:hover {
+  background-color: var(--brand_primary_600);
+}
