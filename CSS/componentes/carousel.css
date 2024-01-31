@@ -1,0 +1,6 @@
+.carousel {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  background: gray;
+}
