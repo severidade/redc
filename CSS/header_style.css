@@ -157,34 +157,7 @@ button[id^="lang"] {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-a[class^="cta-link"] {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 44px;
-  color: var(--white);
-  font-weight: 900;
-  border-radius: 40px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.cta-link-join {
-  background-color: var(--brand_secondary_500);
-}
-
-.cta-link-join:hover {
-  background-color: var(--brand_secondary_600);
-}
-
-.cta-link-test {
-  background-color: var(--brand_primary_500);
-}
-
-.cta-link-test:hover {
-  background-color: var(--brand_primary_600);
 }
 
 /* EXPERTISE CONTAINER */
