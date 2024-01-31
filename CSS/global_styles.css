@@ -35,3 +35,10 @@ body {
 	font-family: var(--font-normal);
   font-weight: 300;
 }
+
+
+/* por conta dos estilos do Bootstrap */
+
+a {
+	text-decoration: none !important;
+}

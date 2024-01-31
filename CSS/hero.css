@@ -28,7 +28,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../assets/grafismos/arch_hero.svg") no-repeat;
+  background: url("../assets/hero/arch_hero.svg") no-repeat;
   background-position: left;
   background-size: cover;
 }
@@ -60,23 +60,6 @@
   margin-bottom: 40px;
 }
 
-.cta_hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 44px;
-  color: var(--white);
-  font-weight: 900;
-  border-radius: 40px;
-  transition: background-color 0.2s ease-in-out;
-  background-color: var(--brand_primary_500);
-}
-
-.cta_hero:hover {
-  background-color: var(--brand_primary_600);
-}
-
 @media screen and (min-width: 1000px) {
   .hero::before {
     content: "";
@@ -85,7 +68,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: url("../assets/grafismos/arch_hero.svg") no-repeat;
+    background: url("../assets/hero/arch_hero.svg") no-repeat;
     background-position: center;
     background-size: contain;
   }
@@ -96,7 +79,7 @@
     top: 0;
     width: 40vw;
     height: 100%;
-    background: url("../assets/img/image_hero.png") no-repeat;
+    background: url("../assets/hero/image_hero.png") no-repeat;
     background-position: left center;
     background-size: cover;
   }
