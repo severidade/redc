@@ -11,6 +11,10 @@ a[class^="cta-link"] {
     transition: background-color 0.2s ease-in-out;
 }
 
+/* a[class^="cta-link"].max-width {
+  width: clamp(200px, 100%, 300px);
+} */
+
 a[class^="cta-link"].arrow::after {
   content: "";
   width: 20px;
