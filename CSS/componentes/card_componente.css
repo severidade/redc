@@ -83,6 +83,23 @@
 }
 
 
+@media screen and (min-width: 600px) and (max-width: 1000px) and (max-height: 433px)  {
+  .card-container {
+    display: flex !important;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .card-figure-container {
+    height: 100%;
+  }
+
+  .card-info {
+    height: initial !important;
+  }
+}
+
+
 @media screen and (min-width: 1000px) {
   .card-figure-container {
     height: calc((70vw - 60px ) * 1 / 3);
