@@ -218,9 +218,16 @@
         centerPadding: '20px',
         responsive: [
           {
-            breakpoint: 1000,
+            breakpoint: 600,
             settings: {
               slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 9999, // Regra para telas maiores que 1000 pixels
+            settings: {
+              centerMode: false, // Desativa o centerMode em telas maiores que 1000 pixels
+              centerPadding: '0px' // Define o centerPadding como '0px' em telas maiores que 1000 pixels
             }
           }
         ]
