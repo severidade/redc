@@ -13,7 +13,7 @@
   width: 100vw;
   max-width: 100%;
   background: var(--brand_secondary_500);
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   position: relative;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@
 
 .hero-text-container {
   z-index: 1;
-  padding: 0 20px;
+  padding: 40px 20px;
   opacity: 0;
   animation: slideInRight 1.7s ease 0.3s forwards; 
 }
