@@ -21,7 +21,7 @@
   overflow: hidden;
   margin: 0;
   /* width: calc(100vw - 40px);*/
-  height: calc(100vw - 80px);
+  height: calc(100vw - 60px);
   width: 100%;
 }
 
@@ -83,3 +83,8 @@
 }
 
 
+@media screen and (min-width: 1000px) {
+  .card-figure-container {
+    height: calc((70vw - 100px ) * 1 / 3);
+  }
+}
