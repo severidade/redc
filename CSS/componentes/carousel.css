@@ -1,6 +1,11 @@
 .carousel {
   position: relative;
-  height: 50vh;
+  min-height: 50vh;
   width: 100%;
   background: gray;
+  padding: 40px 0;
+}
+
+.slick-slide {
+  margin: 0 10px; /* 20px de espaço entre os slides (10px à esquerda e 10px à direita) */
 }

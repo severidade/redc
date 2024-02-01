@@ -1,5 +1,5 @@
 .card-container {
-  width: calc(100vw - 40px);
+  /* width: calc(100vw - 80px); */
   overflow: hidden;
   border-radius: 10px;
   position: relative;
@@ -20,8 +20,9 @@
   position: relative;
   overflow: hidden;
   margin: 0;
-  width: calc(100vw - 40px);
-  height: calc(100vw - 40px);
+  /* width: calc(100vw - 40px);*/
+  height: calc(100vw - 80px);
+  width: 100%;
 }
 
 .card-figure-container::after {
