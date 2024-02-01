@@ -1,5 +1,6 @@
 .we_help_you_container {
-  height: 100vh;
+  min-height: 50vh;
   width: 100vw;
   max-width: 100%;
 }
+
