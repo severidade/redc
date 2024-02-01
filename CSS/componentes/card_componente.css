@@ -17,6 +17,7 @@
 }
 
 .card-figure-container {
+  display: block;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -103,5 +104,6 @@
 @media screen and (min-width: 1000px) {
   .card-figure-container {
     height: calc((70vw - 60px ) * 1 / 3);
+    
   }
 }

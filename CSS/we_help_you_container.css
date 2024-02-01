@@ -2,11 +2,12 @@
   min-height: 50vh;
   width: 100vw;
   max-width: 100%;
+  padding: 40px 0px;
 }
 
 @media screen and (min-width: 1000px) {
   .we_help_you_container {
-    padding: 0 15vw;
+    padding: 80px 15vw;
   }
 }
 
