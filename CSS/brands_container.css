@@ -1,9 +1,3 @@
-.slider-wrapper {
-  /* padding: 0 20px; */
-  border: solid 1px gold;
-  /* isso aqui vai sair */
-}
-
 .carousel-brands {
   position: relative;
   padding-bottom: 44px;
@@ -11,7 +5,6 @@
 
 .carousel-brands  > button.slick-next.slick-arrow, .carousel-brands > button.slick-prev.slick-arrow {
   position: absolute;
-  background: tomato;
   height: 44px;
   width: 44px;
   bottom: 0;
@@ -44,7 +37,7 @@ div[class^="brands-container"] > .content {
   grid-template-rows: repeat(5 , 70px);
   grid-column-gap: 40px ;
   grid-row-gap: 20px;
-  border: solid 1px lightgreen;
+  /* border: solid 1px lightgreen; */
   padding: 0 20px;
 }
 
@@ -62,7 +55,7 @@ div[class^="brands-container"] > .content {
   background-repeat: no-repeat;
   background-size: 80% 80%;
   text-indent: -1000px;
-  border: solid 1px tomato;
+  /* border: solid 1px tomato; */
 }
 
 .brand-paramount {
@@ -159,10 +152,26 @@ div[class^="brands-container"] > .content {
 @media screen and (min-width: 1000px) {
   div[class^="brands-container"] > .content {
     grid-template-columns: repeat(5 , 1fr);
-    grid-template-rows: repeat(2 , 150px);
+    grid-template-rows: repeat(2 , 140px);
   }
   div[class^="brands-container"] > .content {
     padding: 0;
   }
+
+  .brand-ret {
+    background: url(../assets/brands/ret.svg);
+    background-size: 40% 40% !important;
+  }
+
+  .brand-irsh-life {
+    background: url(../assets/brands/irsh_life.svg);
+    background-size: 50% 50% !important;
+  }
+
+  .brand-nba {
+    background: url(../assets/brands/nba.svg);
+    background-size: 50% 50% !important;
+  }
+  
 }
  
