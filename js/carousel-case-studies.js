@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  $('.carousel').slick({
-    slidesToShow: 3,
+  $('.carousel-case-studies').slick({
+    slidesToShow: 4,
     infinite: false,
     slidesToScroll: 1,
     prevArrow: false,
