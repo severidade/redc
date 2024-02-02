@@ -60,7 +60,7 @@ div[class^="brands-container"] > .content {
 
 .brand-paramount {
   background: url(../assets/brands/paramount.svg);
-  background-size: 68% 68% !important;
+  background-size: 70% 70% !important;
 }
 
 .brand-microsoft {
@@ -96,7 +96,7 @@ div[class^="brands-container"] > .content {
 
 .brand-mattel {
   background: url(../assets/brands/mattel.svg);
-  background-size: 68% 68% !important;
+  background-size: 85% 85% !important;
 }
 
 .brand-tourism {
@@ -121,6 +121,7 @@ div[class^="brands-container"] > .content {
 
 .brand-irsh-life {
   background: url(../assets/brands/irsh_life.svg);
+  background-size: 75% 75% !important;
 }
 
 .brand-bord-bia {
@@ -156,6 +157,11 @@ div[class^="brands-container"] > .content {
   }
   div[class^="brands-container"] > .content {
     padding: 0;
+  }
+
+  .brand-mattel {
+    background: url(../assets/brands/mattel.svg);
+    background-size: 68% 68% !important;
   }
 
   .brand-ret {
