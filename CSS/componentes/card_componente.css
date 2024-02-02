@@ -31,7 +31,6 @@
 }
 
 .card-container.case-studies > .card-figure-container{
-  border: solid 2px tomato;
   height: 200px;
 }
 
@@ -64,7 +63,7 @@
 .card-info {
   position: relative;
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,12 +77,10 @@
 }
 
 .card-container.case-studies > .card-info {
-  padding: 40px 20px;
+  padding:40px 20px;
   justify-content: flex-start;
   gap: 10px;
 }
-
-
 
 .card-container.blue-card > .card-info::before {
   content: "";
@@ -136,7 +133,6 @@
   }
 
   .card-container.case-studies > .card-figure-container{
-    border: solid 2px olive;
     height: 100%;
   }
 
