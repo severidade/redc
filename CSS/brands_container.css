@@ -28,7 +28,7 @@ div[class^="brands-container"] > .content {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80% 80%;
-  /* text-indent: -1000px; */
+  text-indent: -1000px;
   border: solid 1px tomato;
 }
 
