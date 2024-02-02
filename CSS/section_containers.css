@@ -1,14 +1,21 @@
 .we-help-you-container,
-.brands-container {
+.brands-container,
+.case-studies-container {
   min-height: 50vh;
   width: 100vw;
   max-width: 100%;
   padding: 40px 0px;
 }
 
+.case-studies-container{
+  background: var(--grey);
+}
+/* grey */
+
 @media screen and (min-width: 1000px) {
   .we-help-you-container, 
-  .brands-container {
+  .brands-container,
+  .case-studies-container {
     padding: 80px 15vw;
   }
 }
