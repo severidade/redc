@@ -4,6 +4,39 @@
   /* isso aqui vai sair */
 }
 
+.carousel-brands {
+  position: relative;
+  padding-bottom: 44px;
+}
+
+.carousel-brands  > button.slick-next.slick-arrow, .carousel-brands > button.slick-prev.slick-arrow {
+  position: absolute;
+  background: tomato;
+  height: 44px;
+  width: 44px;
+  bottom: 0;
+  overflow: hidden;
+  text-indent: -400%;
+}
+.carousel-brands  > button.slick-next.slick-arrow {
+  right: 10px;
+  background: url(../assets/brands/arrows/right_arrow_red.svg) no-repeat center;
+}
+
+.carousel-brands > button.slick-prev.slick-arrow {
+  right: 64px;
+  background: url(../assets/brands/arrows/left_arrow_red.svg) no-repeat center;
+}
+
+.carousel-brands  > button.slick-next.slick-arrow.slick-disabled {
+  background: url(../assets/brands/arrows/right_arrow_gray.svg) no-repeat center;
+}
+
+.carousel-brands > button.slick-prev.slick-arrow.slick-disabled{
+  background: url(../assets/brands/arrows/left_arrow_gray.svg) no-repeat center;
+}
+
+
 div[class^="brands-container"] > .content {
   display: grid;
   /* grid-auto-flow: column; */
@@ -80,14 +113,17 @@ div[class^="brands-container"] > .content {
 
 .brand-bank-of-ireland {
   background: url(../assets/brands/bank_of_ireland.svg);
+  background-size: 68% 68% !important;
 }
 
 .brand-aviva {
   background: url(../assets/brands/aviva.svg);
+  background-size: 70% 70% !important;
 }
 
 .brand-ret {
   background: url(../assets/brands/ret.svg);
+  background-size: 55% 55% !important;
 }
 
 .brand-irsh-life {
@@ -108,10 +144,12 @@ div[class^="brands-container"] > .content {
 
 .brand-nba {
   background: url(../assets/brands/nba.svg);
+  background-size: 68% 68% !important;
 }
 
 .brand-disney {
   background: url(../assets/brands/disney.svg);
+  background-size: 70% 70% !important;
 }
 
 .brand-suntory {
@@ -122,6 +160,9 @@ div[class^="brands-container"] > .content {
   div[class^="brands-container"] > .content {
     grid-template-columns: repeat(5 , 1fr);
     grid-template-rows: repeat(2 , 150px);
+  }
+  div[class^="brands-container"] > .content {
+    padding: 0;
   }
 }
  
