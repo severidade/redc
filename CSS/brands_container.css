@@ -1,0 +1,127 @@
+.slider-wrapper {
+  /* padding: 0 20px; */
+  border: solid 1px gold;
+  /* isso aqui vai sair */
+}
+
+div[class^="brands-container"] > .content {
+  display: grid;
+  /* grid-auto-flow: column; */
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: repeat(5 , 70px);
+  grid-column-gap: 40px ;
+  grid-row-gap: 20px;
+  border: solid 1px lightgreen;
+  padding: 0 20px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.content > li[class^="brand"]  {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  text-indent: -1000px;
+  border: solid 1px tomato;
+}
+
+.brand-paramount {
+  background: url(../assets/brands/paramount.svg);
+  background-size: 68% 68% !important;
+}
+
+.brand-microsoft {
+  background: url(../assets/brands/microsoft.svg);
+}
+
+.brand-kpsnaks {
+  background: url(../assets/brands/kpsnacks.svg);
+}
+
+.brand-bbc {
+  background: url(../assets/brands/bbc.svg);
+  background-size: 80% 80% !important;
+}
+
+.brand-kerry {
+  background: url(../assets/brands/kerry.svg);
+}
+
+.brand-visa {
+  background: url(../assets/brands/visa.svg);
+  background-size: 40% 40% !important;
+}
+
+.brand-mira {
+  background: url(../assets/brands/mira-showers.svg);
+  background-size: 60% 60% !important;
+}
+
+.brand-vodafone {
+  background: url(../assets/brands/vodafone.svg);
+}
+
+.brand-mattel {
+  background: url(../assets/brands/mattel.svg);
+  background-size: 68% 68% !important;
+}
+
+.brand-tourism {
+  background: url(../assets/brands/tourism.svg);
+}
+
+
+.brand-bank-of-ireland {
+  background: url(../assets/brands/bank_of_ireland.svg);
+}
+
+.brand-aviva {
+  background: url(../assets/brands/aviva.svg);
+}
+
+.brand-ret {
+  background: url(../assets/brands/ret.svg);
+}
+
+.brand-irsh-life {
+  background: url(../assets/brands/irsh_life.svg);
+}
+
+.brand-bord-bia {
+  background: url(../assets/brands/bord_bia.svg);
+}
+
+.brand-irish-distillers {
+  background: url(../assets/brands/irish_distillers.svg);
+}
+
+.brand-national-lottery {
+  background: url(../assets/brands/national_lottery.svg);
+}
+
+.brand-nba {
+  background: url(../assets/brands/nba.svg);
+}
+
+.brand-disney {
+  background: url(../assets/brands/disney.svg);
+}
+
+.brand-suntory {
+  background: url(../assets/brands/suntory.svg);
+}
+
+@media screen and (min-width: 1000px) {
+  div[class^="brands-container"] > .content {
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(2 , 150px);
+  }
+}
+ 
