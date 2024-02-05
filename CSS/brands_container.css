@@ -10,6 +10,7 @@
   bottom: 0;
   overflow: hidden;
   text-indent: -400%;
+  transition: background 0.8s ease-in-out;
 }
 .carousel-brands  > button.slick-next.slick-arrow {
   right: 10px;
@@ -32,12 +33,10 @@
 
 div[class^="brands-container"] > .content {
   display: grid;
-  /* grid-auto-flow: column; */
   grid-template-columns: repeat(2 , 1fr);
   grid-template-rows: repeat(5 , 70px);
   grid-column-gap: 40px ;
   grid-row-gap: 20px;
-  /* border: solid 1px lightgreen; */
   padding: 0 35px;
 }
 
@@ -57,18 +56,15 @@ div[class^="brands-container"] > .content {
   text-indent: -1000px;
   align-self: center;
   justify-self: center;
-  /* border: solid 1px tomato; */
 }
 
 .brand-paramount {
   background: url(../assets/brands/paramount.svg);
   height: 90% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-microsoft {
   background: url(../assets/brands/microsoft.svg);
-  /* border: solid 1px tomato; */
   height: 60% !important;
 }
 
@@ -82,25 +78,21 @@ div[class^="brands-container"] > .content {
 
 .brand-kerry {
   background: url(../assets/brands/kerry.svg);
-  /* border: solid 1px tomato; */
   height: 60% !important;
 }
 
 .brand-visa {
   background: url(../assets/brands/visa.svg);
   height: 40% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-mira {
   background: url(../assets/brands/mira-showers.svg);
   height: 70% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-vodafone {
   background: url(../assets/brands/vodafone.svg);
-  /* border: solid 1px tomato; */
   height: 60% !important;
 }
 
@@ -115,30 +107,25 @@ div[class^="brands-container"] > .content {
 .brand-bank-of-ireland {
   background: url(../assets/brands/bank_of_ireland.svg);
   height: 68% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-aviva {
   background: url(../assets/brands/aviva.svg);
   height: 50% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-ret {
   background: url(../assets/brands/ret.svg);
   height: 50% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-irsh-life {
   background: url(../assets/brands/irsh_life.svg);
   height: 60% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-bord-bia {
   background: url(../assets/brands/bord_bia.svg);
-  /* border: solid 1px tomato; */
   height: 60% !important;
 }
 
@@ -153,19 +140,15 @@ div[class^="brands-container"] > .content {
 .brand-nba {
   background: url(../assets/brands/nba.svg);
   height: 55% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-disney {
   background: url(../assets/brands/disney.svg);
-  /* background-size: 70% 70% !important; */
   height: 60% !important;
-  /* border: solid 1px tomato; */
 }
 
 .brand-suntory {
   background: url(../assets/brands/suntory.svg);
-  /* border: solid 1px tomato; */
   height: 50% !important;
 }
 
