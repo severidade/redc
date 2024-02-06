@@ -1,6 +1,7 @@
 .we-help-you-container,
 .brands-container,
-.case-studies-container {
+.case-studies-container,
+.news-thinking-container {
   min-height: 50vh;
   width: 100vw;
   max-width: 100%;
@@ -15,7 +16,8 @@
 @media screen and (min-width: 1000px) {
   .we-help-you-container, 
   .brands-container,
-  .case-studies-container {
+  .case-studies-container,
+  .news-thinking-container {
     padding: 80px 15vw;
   }
 }

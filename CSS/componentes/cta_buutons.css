@@ -50,3 +50,7 @@ a[class^="cta-link"].blue {
 a[class^="cta-link"].blue:hover {
   background-color: var(--brand_primary_600);
 }
+
+a[class^="cta-link"].section {
+  margin-top: 40px;
+} 

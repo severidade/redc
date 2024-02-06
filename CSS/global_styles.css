@@ -71,6 +71,11 @@ a {
 	line-height: 44px;
 }
 
+.section-title.negative > .primary-title-weight,
+.section-title.negative > .secondary-title-weight {
+	color: var(--white)
+}
+
 @media screen and (min-width: 1000px) {
 	.section-title {
 		margin-bottom: 80px;
