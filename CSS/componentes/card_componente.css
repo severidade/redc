@@ -155,18 +155,14 @@
 
 /* CARDS DE NOTÓRIAS */
 .card-container.news {
-  display: flex;
-  flex-direction: column-reverse;
-  position: relative;
-  justify-content: flex-end;
+  display: grid;
 }
 
-/* Primeiro Card */
+/* PRIMEIRO CARD VERSÃO CELULAR */
 .card-container.news:first-of-type > .card-news {
-  /* border: solid 3px violet; */
   display: grid;
   grid-template-columns: repeat(6 , 1fr);
-  grid-template-rows: 28px 60px 1fr 200px;
+  grid-template-rows: 28px auto 16px 200px;
   padding: 0;
 }
 
@@ -178,6 +174,20 @@
   padding: 20px 20px 0 20px;
 }
 
+.card-container.news:first-of-type  > .card-news > .publication-link {
+  grid-column: 1 / 7;
+  grid-row: 2 / 3;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.card-container.news:first-of-type > .card-news > .publication-date {
+  font-family: var(--font-normal);
+  grid-column: 1 / 7;
+  grid-row: 3 / 4;
+  text-align: center;
+}
+
 .card-container.news:first-of-type  > .card-news > .category {
   grid-column: 1 / 4;
   grid-row: 4 / 5;
@@ -185,19 +195,12 @@
   margin-left: 10px;
 }
 
-.card-container.news:first-of-type  > .card-news > .publication-link {
-  grid-column: 1 / 7;
-  grid-row: 2 / 4;
-  text-align: center;
-  padding: 0 20px;
-}
-
 .card-container.news:first-of-type > .card-news > .card-figure-container {
   grid-column: 1 / 7;
   grid-row: 4 / 5;
   align-self: start;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .card-container.news > .card-news > .card-figure-container::after {
@@ -205,14 +208,9 @@
 }
 
 
-.card-container.news:first-of-type > .card-news > .publication-date {
-  font-family: var(--font-normal);
-  display: none;
-}
-
 /* OUTROS CARDS */
 .card-container.news > .card-news {
-  /* border: solid 3px lightgreen; */
+  border: solid 3px lightgreen;
   display: grid;
   grid-template-columns: repeat(6 , 1fr);
   grid-template-rows: 28px 60px 1fr 28px;
@@ -253,11 +251,8 @@
 
 .card-container.news a.category {
   display: block;
-  /* position: absolute; */
   z-index: 3;
   background-color: var(--brand_primary_500);
-  /* bottom: 240px;
-  left: 20px; */
   height: 28px;
   border-radius: 20px;
   color: var(--white);
@@ -272,16 +267,7 @@
 .card-container.news a.category:hover {
   background-color: var(--brand_primary_600);
 }
-/* 
-.card-container.news > .card-news{
-  z-index: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-} */
+
 
 .card-container.news > .card-news > .publication-link {
   font-size: 18px;
