@@ -1,27 +1,39 @@
 $(document).ready(function () {
-  $('.carousel').slick({
-    slidesToShow: 3,
-    infinite: false,
-    slidesToScroll: 1,
-    prevArrow: false,
-    nextArrow: false,
-    centerMode: true,
-    centerPadding: '20px',
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 1
+  // Função para configurar o Slick Carousel
+  function configureSlick(selector, slidesToShow, prevArrow, nextArrow) {
+    $(selector).slick({
+      slidesToShow: slidesToShow,
+      infinite: false,
+      slidesToScroll: 1,
+      prevArrow: prevArrow,
+      nextArrow: nextArrow,
+      centerMode: true,
+      centerPadding: '20px',
+      adaptiveHeight: true,
+      responsive: [
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 9999,
+          settings: {
+            centerMode: false,
+            centerPadding: '0px'
+          }
         }
-      },
-      {
-        breakpoint: 9999, // Regra para telas maiores que 1000 pixels
-        settings: {
-          centerMode: false, // Desativa o centerMode em telas maiores que 1000 pixels
-          centerPadding: '0px' // Define o centerPadding como '0px' em telas maiores que 1000 pixels
-        }
-      }
-    ]
-  });
+      ]
+    });
+  }
+
+  // Configuração do Slick Carousel para o carrossel de estudos de caso
+  configureSlick('.carousel-case-studies', 4, false, false);
+
+  // Configuração do Slick Carousel para o carrossel de marcas
+  configureSlick('.carousel-brands', 1, '<button type="button" class="slick-prev">Previous</button>', '<button type="button" class="slick-next">Next</button>');
+
+  // Configuração do Slick Carousel para o carrossel genérico
+  configureSlick('.carousel', 3, false, false);
 });
