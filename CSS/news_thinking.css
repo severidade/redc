@@ -10,14 +10,8 @@
 }
 
 @media screen and (min-width: 1000px) {
-
-  /* .news-and-thinking {
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    gap: 40px;
-  } */
   .news-and-thinking {
-    flex-direction: row;
-    flex-grow: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
